@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans&display=swap');
+
+:root{
+	--button: #fff;
+	--main: #fff;
+	--header: #eee;
+	--icon: #232323;
+}
+
+[data-theme="dark"] {
+	--button: #232323;
+	--main: #121212;
+	--header: #0F0F0F;
+	--icon: #fff;
+}
+
+html {
+	font-family: 'Noto Sans', system-ui;
+    scroll-behavior: smooth;
+	overflow: hidden;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	width: 100%;
+	height: 7.5vh;
+	background: var(--header);
+	gap: 10px;
+	z-index: 2;
+	position: relative;
+}
+
+.button{
+	cursor: pointer;
+	background: var(--button);
+	border-radius: 2.5px;
+	padding: 5px 10px;
+	color: var(--icon);
+	transition: transform .25s;
+	z-index: 2;
+}
+
+.button:hover {
+	transform: scale(1.125);
+}
+
+.upload-button{
+	cursor: pointer;
+	position: relative;
+	transition: transform .25s;
+}
+
+.upload-button:hover {
+	transform: scale(1.125);
+}
+
+#upload {
+	cursor: pointer;
+	background: var(--button);
+	color: transparent;
+	border-radius: 2.5px;
+	height: 27.5px;
+	width: 35px;
+}
+
+#upload::-webkit-file-upload-button {
+	display: none;
+}
+
+.upload-icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: transparent;
+	pointer-events: none;
+}
+
+
+main {
+	background: var(--main);
+	width: 100%;
+	height: 92.5vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	z-index: 1;
+	overflow: hidden;
+	position: relative;
+}
+
+#img-div{
+	position: absolute;
+	left:50%; 
+	top:50%; 
+	transform: translate(-50%, -50%);
+}
+
+#img {
+	max-height: 85vh;
+	transition: transform .5s;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+	z-index: 1;
+}
+
+.pixel-art {
+	image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+#img-name{
+	color: var(--icon);
+	font-weight: 100;
+	font-size: 12.5px;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	position: absolute;
+	display: none;
+	bottom: 8.25vh;
+	opacity: 0.5;
+}
