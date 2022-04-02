@@ -1,7 +1,7 @@
 # Sviewer
 Electron.js Desktop App - JavaScript Image viewer.
 
-use to install packages
+use this to install all packages
 ```
 npm init
 ```
