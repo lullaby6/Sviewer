@@ -3,9 +3,9 @@
   "productName": "Sviewer",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "electron src/index.js",
+    "start": "electron index.js",
     "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=src/assets/favicon.icns --prune=true --out=release-builds",
     "package-win": "electron-packager . Sviewer --overwrite --asar=true --platform=win32 --arch=ia32 --icon=src/assets/favicon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Sviewer\"",
     "package-linux": "electron-packager . Sviewer --overwrite --asar=true --platform=linux --arch=x64 --icon=src/assets/favicon.png --prune=true --out=release-builds"
