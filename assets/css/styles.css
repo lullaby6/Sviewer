@@ -30,7 +30,9 @@ header {
 	background: var(--header);
 	gap: 10px;
 	z-index: 2;
-	position: relative;
+	position: fixed;
+	bottom: 0;
+	left: 0;
 }
 
 .button{
@@ -72,7 +74,7 @@ header {
 main {
 	background: var(--main);
 	width: 100%;
-	height: 92.5vh;
+	height: 93vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -143,4 +145,15 @@ main {
 
 .tooltip:hover span {
 	visibility: visible;
+}
+
+@media screen and (max-width: 600px){
+	header{
+		flex-direction: column;
+		height: 100%;
+		max-width: 50px;
+	}
+	main{
+		height: 100vh;
+	}
 }
