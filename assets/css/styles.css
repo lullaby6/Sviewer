@@ -129,7 +129,7 @@ main {
 	right: 50%;
  	transform: translate(50%,-50%);
 	font-family: system-ui;
-	background-color: rgb(15, 15, 15, 1);
+	background: var(--header);
 	color: rgb(200, 200, 200);
 	font-size: 13.75px;
 	padding: 5px;
