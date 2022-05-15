@@ -130,21 +130,25 @@ main {
 }
 
 .tooltip span {
-	position: absolute;
-	top: -100%; 
-	right: 50%;
+ 	position: absolute;
+ 	top: -100%;
+ 	right: 50%;
  	transform: translate(50%,-50%);
-	font-family: system-ui;
-	background: var(--header);
-	color: rgb(200, 200, 200);
-	font-size: 13.75px;
-	padding: 5px;
-	border-radius: 5px;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	-ms-border-radius: 5px;
-	-o-border-radius: 5px;
-	visibility:hidden;
+ 	font-family: system-ui;
+ 	background: var(--header);
+ 	color: rgb(200, 200, 200);
+ 	font-size: 13.75px;
+ 	padding: 5px;
+ 	border-radius: 5px;
+ 	-webkit-border-radius: 5px;
+ 	-moz-border-radius: 5px;
+ 	-ms-border-radius: 5px;
+ 	-o-border-radius: 5px;
+ 	visibility:hidden;
+ 	-webkit-transform: translate(50%,-50%);
+ 	-moz-transform: translate(50%,-50%);
+ 	-ms-transform: translate(50%,-50%);
+ 	-o-transform: translate(50%,-50%);
 }
 
 .tooltip:hover span {
@@ -165,13 +169,26 @@ main {
 	}
 	.button{
 		font-size: 10px;
-		padding: 10px 2.5px;
+		padding: 12.5px 2.5px;
 	}
 	#upload {
-		height: 30px;
+		height: 40px;
 		width: 15px;
 	}
 	#img-name {
-		display: none;
+		left: 50vw;
+		bottom: 10px;
+		transform: translateX(-50%);
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		-o-transform: translateX(-50%);
+	}
+	.button-upload {
+		transform: translateY(10%);
+		-webkit-transform: translateY(10%);
+		-moz-transform: translateY(10%);
+		-ms-transform: translateY(10%);
+		-o-transform: translateY(10%);
 	}
 }
