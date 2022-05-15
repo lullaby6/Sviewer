@@ -7,7 +7,7 @@
 	--icon: #232323;
 }
 
-[data-theme="dark"] {
+html.dark {
 	--button: #232323;
 	--main: #121212;
 	--header: #0F0F0F;
@@ -39,25 +39,15 @@ header {
 	border-radius: 2.5px;
 	padding: 5px 10px;
 	color: var(--icon);
-	transition: transform .25s;
 	z-index: 2;
 }
 
-.button:hover {
-	transform: scale(1.125);
-}
-
-.upload-button{
-	cursor: pointer;
-	position: relative;
-	transition: transform .25s;
-}
-
-.upload-button:hover {
-	transform: scale(1.125);
+#upload-div{
+	position: relative
 }
 
 #upload {
+	position: relative;
 	cursor: pointer;
 	background: var(--button);
 	color: transparent;
@@ -127,4 +117,30 @@ main {
 	display: none;
 	bottom: 8.25vh;
 	opacity: 0.5;
+}
+
+.tooltip {
+	position: relative;
+}
+
+.tooltip span {
+	position: absolute;
+	top: -100%; 
+	right: 50%;
+ 	transform: translate(50%,-50%);
+	font-family: system-ui;
+	background-color: rgb(15, 15, 15, 1);
+	color: rgb(200, 200, 200);
+	font-size: 13.75px;
+	padding: 5px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	visibility:hidden;
+}
+
+.tooltip:hover span {
+	visibility: visible;
 }

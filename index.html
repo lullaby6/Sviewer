@@ -19,21 +19,22 @@
 	</main>
 	<header>
 		<p id='img-name'>&nbsp;&nbsp;&nbsp;&nbsp;</p>
-		<div class='upload-button'>
+		<div id="upload-div" class="tooltip">
 			<input type="file" id='upload' accept="image/*" multiple>
 			<i class='upload-icon button bx bx-image-alt'></i>
+			<span>Open</span>
 		</div>
-		<i class='button bx bx-plus'></i>
-		<i class='button bx bx-minus'></i>
-		<i class='button bx bx-reset'></i>
-		<i class='button bx bx-chevron-left'></i>
-		<i class='button bx bx-chevron-right'></i>
-		<i class='button bx bx-rotate-left'></i>
-		<i class='button bx bx-rotate-right'></i>
-		<i class='button button-pixel-mode bx bx-cube'></i>
-		<i class='button bx bx-copy'></i>
-		<i class='button button-theme bx bx-moon'></i>
-		<i class='button button-fullscreen bx bx-fullscreen'></i>
+		<i class='button bx bx-plus tooltip'><span>Zoom+</span></i>
+		<i class='button bx bx-minus tooltip'><span>Zoom-</span></i>
+		<i class='button bx bx-reset tooltip'><span>Reset</span></i>
+		<i class='button bx bx-chevron-left tooltip'><span>Back</span></i>
+		<i class='button bx bx-chevron-right tooltip'><span>Next</span></i>
+		<i class='button bx bx-rotate-left tooltip'><span>Rotate-</span></i>
+		<i class='button bx bx-rotate-right tooltip'><span>Rotate+</span></i>
+		<i class='button button-pixel-mode bx bx-cube tooltip'><span>Pixel</span></i>
+		<i class='button bx bx-copy tooltip'><span>Copy</span></i>
+		<i class='button bx bx-moon tooltip' id="toggle-darkmode-button"><span>Theme</span></i>
+		<i class='button button-fullscreen bx bx-fullscreen tooltip'><span>Fullscreen</span></i>
 	</header>
 	
 	<script src="assets/js/main.js"></script>
@@ -44,6 +45,6 @@
 	<script src="assets/js/drag.js"></script>
 	<script src="assets/js/fullscreen.js"></script>
 	<script src="assets/js/pixel-mode.js"></script>
-	<script src="assets/js/theme-mode.js"></script>
+	<script src="assets/js/edarkmode.js"></script>
 </body>
 </html>
