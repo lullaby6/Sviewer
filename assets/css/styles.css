@@ -58,6 +58,10 @@ header {
 	width: 35px;
 }
 
+#upload:focus{
+    outline: none;
+}
+
 #upload::-webkit-file-upload-button {
 	display: none;
 }
