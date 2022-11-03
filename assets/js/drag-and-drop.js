@@ -12,13 +12,8 @@ main.addEventListener("drop", event => {
 				loadImage(event.dataTransfer.items[pos].getAsFile())
 			}
 		}
-		
 	}else{
-
-		for(let i = 0; i < event.dataTransfer.files.length; i++){
-			loadImage(file)
-		}
-		
+		for(let i = 0; i < event.dataTransfer.files.length; i++) loadImage(file)
 	}
 
 	event.dataTransfer.items
@@ -27,10 +22,6 @@ main.addEventListener("drop", event => {
 })
 
 
-main.addEventListener("dragover", event => {
-	event.preventDefault()
-})
+main.addEventListener("dragover", event => event.preventDefault())
 
-main.addEventListener("dragenter", event => {
-	event.preventDefault()
-})
+main.addEventListener("dragenter", event => event.preventDefault())

@@ -1,9 +1,8 @@
 const dragElement = element => {
-	
 	const closeDragElement = () => {
 		document.onmouseup = null
 		document.onmousemove = null
-	
+
 		document.ontouchend = null
 		document.ontouchmove = null
 	}
@@ -53,7 +52,6 @@ const dragElement = element => {
 	let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0
 	element.onmousedown = dragMouseDown
 	element.ontouchstart = dragTouchDown
-
 }
 
 dragElement(imgDiv)
