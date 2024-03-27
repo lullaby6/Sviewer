@@ -2,4 +2,4 @@
 
 A JavaScript Image viewer.
 
-https://lucianobrumer.github.io/Sviewer/
+[https://lullaby6.github.io/Sviewer/](https://lullaby6.github.io/Sviewer/)
